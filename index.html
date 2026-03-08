@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Alberto Seco | Data Engineer</title>
+    
+    <!-- Integración de Tailwind CSS para estilos modernos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Integración de FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuración personalizada de Tailwind y estilos base -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#34d399', // emerald-400
+                            DEFAULT: '#10b981', // emerald-500
+                            dark: '#059669', // emerald-600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Efecto de fondo abstracto y tecnológico para la cabecera */
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(circle at 15% 50%, rgba(16, 185, 129, 0.15), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(52, 211, 153, 0.1), transparent 25%);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 antialiased selection:bg-brand selection:text-white">
+
+    <!-- Barra de Navegación -->
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-sm border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-bold text-white tracking-wider text-xl">
+                    JA<span class="text-brand">.</span>SECO
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="hover:text-brand transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#experience" class="hover:text-brand transition-colors px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                        <a href="#skills" class="hover:text-brand transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#education" class="hover:text-brand transition-colors px-3 py-2 rounded-md text-sm font-medium">Education</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Cabecera (Hero) -->
+    <header class="hero-pattern pt-32 pb-20 md:pt-48 md:pb-32 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-2/3">
+                <p class="text-brand font-semibold tracking-wide uppercase mb-2">Hello, I'm</p>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
+                    José Alberto Seco
+                </h1>
+                <h2 class="text-xl md:text-2xl text-slate-400 mb-6">
+                    Data Engineer & Consultant | AI/ML Student
+                </h2>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-8">
+                    <a href="#contact" class="bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg shadow-brand/30 flex items-center justify-center">
+                        <i class="fa-solid fa-envelope mr-2"></i> Get in Touch
+                    </a>
+                    <a href="https://linkedin.com/in/josealbertoseco" target="_blank" class="border border-slate-600 hover:border-slate-400 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center">
+                        <i class="fa-brands fa-linkedin mr-2"></i> LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+            <!-- Avatar o Logo abstracto -->
+            <div class="hidden md:flex md:w-1/3 justify-end">
+                <div class="w-64 h-64 rounded-full border-4 border-slate-800 p-2 relative">
+                    <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center overflow-hidden">
+                        <i class="fa-solid fa-network-wired text-6xl text-brand opacity-80"></i>
+                    </div>
+                    <!-- Decoración orbital -->
+                    <div class="absolute inset-0 border-2 border-brand/30 rounded-full animate-[spin_10s_linear_infinite]" style="border-top-color: transparent;"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Mí (About) -->
+    <section id="about" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center">
+                <i class="fa-solid fa-user-astronaut text-brand mr-3"></i> About Me
+            </h2>
+            <div class="bg-slate-800/50 rounded-2xl p-8 border border-slate-700/50 shadow-xl leading-relaxed text-lg">
+                <p class="mb-4">
+                    Results-driven <strong class="text-white">Data Engineer</strong> with 4+ years of experience building scalable data architectures and pipelines. Expert in <strong class="text-white">Python, SQL, and AWS (Redshift)</strong>, with a strong focus on ETL automation and performance optimization.
+                </p>
+                <p>
+                    Currently pursuing an <strong class="text-brand">MSc in Artificial Intelligence</strong> and holding a <strong class="text-white">Databricks Certified Data Engineer Associate</strong> credential. I have a proven track record of leading international teams and delivering high-impact data solutions in complex, fast-paced environments. My goal is to bridge the gap between solid data infrastructure and predictive analytics.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia Laboral -->
+    <section id="experience" class="py-20 bg-slate-800/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <i class="fa-solid fa-briefcase text-brand mr-3"></i> Work Experience
+            </h2>
+            
+            <div class="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+                
+                <!-- Trabajo 1: Consultant -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-900 text-brand shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                            <h3 class="font-bold text-xl text-white">Consultant - Data Engineer</h3>
+                            <span class="text-sm text-brand font-medium">Mar 2024 - Present</span>
+                        </div>
+                        <h4 class="text-slate-400 mb-4 font-medium"><i class="fa-solid fa-building mr-1"></i> SDG Group (Madrid / Remote)</h4>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-sm text-slate-300">
+                            <li><strong>Lead Data Engineer:</strong> Spearheading an international team of 4, managing sprints via Azure DevOps, and implementing Code Reviews to ensure best practices.</li>
+                            <li><strong>Pipeline Automation:</strong> Engineered and automated end-to-end ETL workflows, reducing manual intervention and increasing data reliability.</li>
+                            <li><strong>Cloud Architecture:</strong> Architected and optimized Pharma Data Warehouses on AWS Redshift, utilizing advanced SQL for high-performance analytics.</li>
+                            <li><strong>Modern Data Stack:</strong> Developing scalable data processing jobs using PySpark and Databricks (Medallion Architecture).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Trabajo 2: Analyst -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-slate-400 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 hover:bg-slate-800 transition-colors">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                            <h3 class="font-bold text-xl text-white">Analyst - Business Intelligence</h3>
+                            <span class="text-sm text-slate-400">Aug 2022 - Feb 2024</span>
+                        </div>
+                        <h4 class="text-slate-400 mb-4 font-medium">SDG Group</h4>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-sm text-slate-300">
+                            <li>Managed a complex migration from Power BI to Qlik Sense/QlikView with zero downtime.</li>
+                            <li>Developed over 15 interactive QlikSense dashboards for executive decision-making.</li>
+                            <li>Designed ETL processes using Talend Open Studio and PySpark in Databricks integrating APIs, S3, and Veeva CRM.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Trabajo 3: Internship -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-800/30 p-6 rounded-xl border border-slate-700/30">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                            <h3 class="font-bold text-lg text-white">Internship - Business Intelligence</h3>
+                            <span class="text-sm text-slate-500">Mar 2022 - Jul 2022</span>
+                        </div>
+                        <h4 class="text-slate-500 mb-2 font-medium">SDG Group</h4>
+                        <p class="text-sm">Rapidly gained proficiency in the technology stack, supporting ETL development and Dashboard maintenance for international clients.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Herramientas y Tecnologías (Skills) -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">
+                Technical Arsenal
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Data Engineering -->
+                <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+                    <div class="text-brand text-3xl mb-4"><i class="fa-solid fa-server"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-4">Cloud & Data</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">AWS Redshift</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Databricks</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Amazon S3</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Talend Studio</span>
+                        <span class="px-3 py-1 bg-brand/20 text-brand border border-brand/30 rounded-full text-sm">Medallion Arch.</span>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+                    <div class="text-brand text-3xl mb-4"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-4">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">SQL / PL/SQL</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">PySpark</span>
+                    </div>
+                </div>
+
+                <!-- AI & ML -->
+                <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+                    <div class="text-brand text-3xl mb-4"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-4">AI & ML</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Scikit-learn</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Pandas</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">PyTorch</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Data Mining</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Viz -->
+                <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+                    <div class="text-brand text-3xl mb-4"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-4">Tools & Viz</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">QlikSense</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Power BI</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Azure DevOps</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-200 rounded-full text-sm">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Educación y Certificaciones -->
+    <section id="education" class="py-20 bg-slate-800/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <i class="fa-solid fa-graduation-cap text-brand mr-3"></i> Education & Certifications
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Columna Educación -->
+                <div class="space-y-6">
+                    <div class="bg-slate-800 p-6 rounded-xl border-l-4 border-brand shadow-md">
+                        <h3 class="font-bold text-lg text-white">MSc in Artificial Intelligence</h3>
+                        <p class="text-brand text-sm mb-2">Escuela Superior de Informática, UCLM | 2025 - Expected 2026</p>
+                        <p class="text-sm text-slate-400">Focus: Predictive Modeling, Data Mining, and Deep Learning.</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 p-6 rounded-xl border-l-4 border-slate-600">
+                        <h3 class="font-bold text-lg text-slate-200">Degree in Computer Engineering</h3>
+                        <p class="text-slate-400 text-sm mb-2">Escuela Superior de Informática, UCLM | 2018 - 2022</p>
+                        <p class="text-sm text-slate-400">Specialization in Computing.</p>
+                    </div>
+
+                    <div class="bg-slate-800/30 p-6 rounded-xl border-l-4 border-slate-700">
+                        <h3 class="font-bold text-md text-slate-300">Higher Technical Cert. in Systems Admin</h3>
+                        <p class="text-slate-500 text-sm">I.E.S Maestre de Calatrava | 2016 - 2018</p>
+                    </div>
+                </div>
+
+                <!-- Columna Certificaciones -->
+                <div>
+                    <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-6 rounded-xl border border-brand/50 shadow-lg relative overflow-hidden">
+                        <div class="absolute top-0 right-0 -mt-4 -mr-4 text-brand opacity-10 text-9xl">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="relative z-10 flex items-start">
+                            <i class="fa-solid fa-award text-3xl text-brand mr-4 mt-1"></i>
+                            <div>
+                                <h3 class="font-bold text-xl text-white mb-1">Databricks Certified Data Engineer Associate</h3>
+                                <p class="text-slate-400 text-sm mb-4">Issued by Databricks | 2025</p>
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-brand/10 text-brand border border-brand/20">
+                                    Active Certification
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer id="contact" class="bg-slate-950 py-12 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Let's Connect</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+                Whether you have a question or just want to say hi, I'll try my best to get back to you! I'm currently open to new opportunities.
+            </p>
+            
+            <div class="flex justify-center space-x-6 mb-8">
+                <!-- Enlaces de contacto (¡Recuerda actualizar los links href!) -->
+                <a href="mailto:jalberto.seco@gmail.com" class="text-slate-400 hover:text-brand transform hover:scale-110 transition-all text-3xl">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://linkedin.com/in/josealbertoseco" target="_blank" class="text-slate-400 hover:text-brand transform hover:scale-110 transition-all text-3xl">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/JoseAlbertoSeco" target="_blank" class="text-slate-400 hover:text-brand transform hover:scale-110 transition-all text-3xl">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            
+            <p class="text-slate-600 text-sm">
+                &copy; <script>document.write(new Date().getFullYear())</script> José Alberto Seco. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
